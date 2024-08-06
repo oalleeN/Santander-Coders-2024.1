@@ -29,15 +29,15 @@ public class Programa {
     public static void consultarIMC(double imc) {
         if (imc < 17.0) {
             System.out.println("Muito abaixo do peso.");
-        } else if (imc >= 17.0 && imc <= 18.49) {
+        } else if (imc <= 18.49) {
             System.out.println("Abaixo do peso.");
-        } else if (imc >= 18.5 && imc <= 24.99) {
+        } else if (imc <= 24.99) {
             System.out.println("Peso normal.");
-        } else if (imc >= 25.0 && imc <= 29.99) {
+        } else if (imc <= 29.99) {
             System.out.println("Acima do peso.");
-        } else if (imc >= 30.0 && imc <= 34.99) {
+        } else if (imc <= 34.99) {
             System.out.println("Obesidade I.");
-        } else if (imc >= 35.0 && imc <= 39.99) {
+        } else if (imc <= 39.99) {
             System.out.println("Obesidade II (severa).");
         } else {
             System.out.println("Obesidade III (mórbida).");
