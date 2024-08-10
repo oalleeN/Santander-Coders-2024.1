@@ -4,6 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("ESCOLHA UMA DAS OPÇÕES ABAIXO:");
+
         System.out.println("------------------------------");
         System.out.println("[1] -  Celsius para Fahrenheit");
         System.out.println("[2] -      Celsius para Kelvin");
@@ -21,61 +23,61 @@ public class Main {
 
         switch (entradaOpcao) {
             case 1:
-                System.out.print("\nDigite o valor que deseja converter da temperatura em Celsius para Fahrenheit: ");
+                System.out.print("\nDigite o valor da temperatura deseja converter (°C para °F): ");
                 valorTemperatura = sc.nextDouble();
                 recebeConversao = UnidadeTemperatura.CELSIUS_TO_FAHRENHEIT.converter(valorTemperatura);
 
-                System.out.printf("A temperatura convertida é de %.3f", recebeConversao);
+                System.out.printf("A temperatura convertida é de %.3f °F", recebeConversao);
 
                 break;
 
             case 2:
-                System.out.print("\nDigite o valor que deseja converter da temperatura em Celsius para Kelvin: ");
+                System.out.print("\nDigite o valor da temperatura deseja converter (°C para K): ");
                 valorTemperatura = sc.nextDouble();
                 recebeConversao = UnidadeTemperatura.CELSIUS_TO_KELVIN.converter(valorTemperatura);
 
-                System.out.printf("A temperatura convertida é de %.3f", recebeConversao);
+                System.out.printf("A temperatura convertida é de %.3f K", recebeConversao);
 
                 break;
 
             case 3:
-                System.out.print("\nDigite o valor que deseja converter da temperatura em Fahrenheit para Celsius: ");
+                System.out.print("\nDigite o valor da temperatura deseja converter (°F para °C): ");
                 valorTemperatura = sc.nextDouble();
                 recebeConversao = UnidadeTemperatura.FAHRENHEIT_TO_CELSIUS.converter(valorTemperatura);
 
-                System.out.printf("A temperatura convertida é de %.3f", recebeConversao);
+                System.out.printf("A temperatura convertida é de %.3f °C", recebeConversao);
 
                 break;
 
             case 4:
-                System.out.print("\nDigite o valor que deseja converter da temperatura em Fahrenheit para Kelvin: ");
+                System.out.print("\nDigite o valor da temperatura deseja converter (°F para K): ");
                 valorTemperatura = sc.nextDouble();
                 recebeConversao = UnidadeTemperatura.FAHRENHEIT_TO_KELVIN.converter(valorTemperatura);
 
-                System.out.printf("A temperatura convertida é de %.3f", recebeConversao);
+                System.out.printf("A temperatura convertida é de %.3f K", recebeConversao);
 
                 break;
 
             case 5:
-                System.out.print("\nDigite o valor que deseja converter da temperatura em Kelvin para Celsius: ");
+                System.out.print("\nDigite o valor da temperatura deseja converter (K para °C): ");
                 valorTemperatura = sc.nextDouble();
                 recebeConversao = UnidadeTemperatura.KELVIN_TO_CELSIUS.converter(valorTemperatura);
 
-                System.out.printf("A temperatura convertida é de %.3f", recebeConversao);
+                System.out.printf("A temperatura convertida é de %.3f °C", recebeConversao);
 
                 break;
 
             case 6:
-                System.out.print("\nDigite o valor que deseja converter da temperatura em Kelvin para Fahrenheit: ");
+                System.out.print("\nDigite o valor da temperatura deseja converter (K para °F): ");
                 valorTemperatura = sc.nextDouble();
                 recebeConversao = UnidadeTemperatura.KELVIN_TO_FAHRENHEIT.converter(valorTemperatura);
 
-                System.out.printf("A temperatura convertida é de %.3f", recebeConversao);
+                System.out.printf("A temperatura convertida é de %.3f °F", recebeConversao);
 
                 break;
 
             default:
-                System.out.println("Insira um valor válido!");
+                System.out.println("Opção inválida!");
         }
 
         sc.close();

@@ -43,4 +43,3 @@ public enum UnidadeTemperatura {
 
     public abstract double converter(double temperatura);
 }
-
