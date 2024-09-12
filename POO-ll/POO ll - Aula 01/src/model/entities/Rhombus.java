@@ -10,22 +10,6 @@ public class Rhombus implements Shape{
         this.shorterDiagonal = shorterDiagonal;
     }
 
-    public double getLongerDiagonal() {
-        return longerDiagonal;
-    }
-
-    public void setLongerDiagonal(double longerDiagonal) {
-        this.longerDiagonal = longerDiagonal;
-    }
-
-    public double getShorterDiagonal() {
-        return shorterDiagonal;
-    }
-
-    public void setShorterDiagonal(double shorterDiagonal) {
-        this.shorterDiagonal = shorterDiagonal;
-    }
-
     @Override
     public double area() {
         return (longerDiagonal * shorterDiagonal) / 2;
